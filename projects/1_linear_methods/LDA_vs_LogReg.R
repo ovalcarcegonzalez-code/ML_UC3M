@@ -1,6 +1,6 @@
 library(MASS)
 set.seed(2)
-## simulate the two Gaussian groups (this data is taken from the original slides in aula global)
+## simulate the two Gaussian groups 
 make_data <- function(n) {
   S <- matrix(c(3, 0.2, 0.2, 0.2), 2, 2)
   X <- rbind(mvrnorm(n, c(4, 1), S), mvrnorm(n, c(1, 3), S))
